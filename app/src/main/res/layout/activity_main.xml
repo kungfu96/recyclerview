@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E3E3"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="269dp"
+                android:layout_height="61dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter your name to save"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#19811D"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="102dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/editTextTextPersonName"
+                android:text="save" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/webdevloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Devloper" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/teamb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Devloper" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/iosdevloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IOS Developer" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/testing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QA_Testing" />
+
+    </com.google.android.material.tabs.TabLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
